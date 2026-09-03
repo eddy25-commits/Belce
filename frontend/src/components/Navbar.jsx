@@ -26,7 +26,6 @@ export default function Navbar() {
           </span>
           <span className="navbar-logo-text">
             <span className="navbar-logo-name">Belce</span>
-            <span className="navbar-logo-sub">Kumasi, Ghana</span>
           </span>
         </Link>
 
