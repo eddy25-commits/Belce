@@ -25,7 +25,7 @@ export default function Navbar() {
             <img src="/logo.svg" alt="Belce" className="navbar-logo-mark" />
           </span>
           <span className="navbar-logo-text">
-            <span className="navbar-logo-name">Belce</span>
+            <span className="navbar-logo-name">Drip Sync</span>
           </span>
         </Link>
 
