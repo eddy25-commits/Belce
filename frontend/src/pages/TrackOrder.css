@@ -1,0 +1,132 @@
+.track-order-page {
+  padding: 48px 0 90px;
+}
+
+.track-order-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 28px;
+  margin-top: 20px;
+}
+
+.track-order-card,
+.track-order-result {
+  background: var(--color-white);
+  border: 1px solid var(--color-gold-soft);
+  border-radius: 20px;
+  box-shadow: 0 14px 34px rgba(20, 17, 15, 0.06);
+  padding: 28px;
+}
+
+.track-order-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.track-order-result {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.track-order-result h2 {
+  margin-bottom: 12px;
+}
+
+.track-status-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-start;
+  border-radius: 999px;
+  padding: 7px 12px;
+  font-size: 0.76rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.track-status-badge.pending {
+  background: #f9efd0;
+  color: #8a6a17;
+}
+
+.track-status-badge.processing {
+  background: #eaeaf7;
+  color: #4b4e8f;
+}
+
+.track-status-badge.shipped {
+  background: #dff6eb;
+  color: #1a6c49;
+}
+
+.track-status-badge.completed {
+  background: #dff4e5;
+  color: #2a6a3d;
+}
+
+.track-status-badge.cancelled {
+  background: #f7e3e1;
+  color: #a4372d;
+}
+
+.track-order-meta {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.track-order-meta div {
+  padding: 12px 14px;
+  border: 1px solid var(--color-line);
+  border-radius: 12px;
+  background: var(--color-cream);
+}
+
+.track-order-meta span {
+  display: block;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #7d756d;
+  margin-bottom: 4px;
+}
+
+.track-order-meta strong {
+  font-size: 0.9rem;
+  color: var(--color-black);
+}
+
+.track-order-items {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.track-order-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 0.88rem;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--color-line);
+}
+
+@media (max-width: 700px) {
+  .track-order-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .track-order-card,
+  .track-order-result {
+    padding: 20px 16px;
+  }
+
+  .track-order-meta {
+    grid-template-columns: 1fr;
+  }
+}

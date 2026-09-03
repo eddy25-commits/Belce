@@ -1,0 +1,217 @@
+.footer {
+  margin-top: auto;
+  background: var(--color-black);
+  color: rgba(255, 255, 255, 0.85);
+  padding-top: 48px;
+  border-top: 1px solid rgba(227, 198, 116, 0.25);
+}
+
+.footer-inner {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1fr;
+  gap: 32px;
+  padding-bottom: 32px;
+}
+
+/* ---------- Brand column ---------- */
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.footer-logo-ring {
+  position: relative;
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+}
+
+.footer-logo-mark {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.footer-logo-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
+}
+
+.footer-logo-name {
+  display: block;
+  font-family: var(--font-wordmark);
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  background: linear-gradient(120deg, #f1d78c 0%, #ffe6a8 50%, #d9b45c 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.footer-logo-sub {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 0.6rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.55);
+  font-weight: 500;
+  margin-top: 2px;
+}
+
+.footer-tagline {
+  font-size: 0.88rem;
+  max-width: 320px;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+/* ---------- Headings / links ---------- */
+.footer-heading {
+  color: var(--color-gold-light);
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+  font-weight: 600;
+}
+
+.footer-col p {
+  font-size: 0.88rem;
+  margin: 0 0 8px;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.footer-col a:hover {
+  color: var(--color-gold-light);
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 18px 0;
+  font-size: 0.75rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+/* ---------- Accordion toggle (inert on desktop) ---------- */
+.footer-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0 0 14px;
+  font: inherit;
+  color: inherit;
+  text-align: left;
+  cursor: default;
+  pointer-events: none;
+}
+
+.footer-chevron {
+  display: none;
+  flex-shrink: 0;
+  transition: transform 0.25s ease;
+}
+
+.footer-col-content {
+  display: flex;
+  flex-direction: column;
+  max-height: none;
+  overflow: visible;
+}
+
+.footer-whatsapp-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--color-gold-light);
+}
+
+/* ---------- Tablet ---------- */
+@media (max-width: 900px) {
+  .footer-inner {
+    grid-template-columns: 1fr 1fr;
+    gap: 28px 24px;
+  }
+}
+
+/* ---------- Mobile: collapse to accordion, shrink height ---------- */
+@media (max-width: 700px) {
+  .footer {
+    padding-top: 32px;
+  }
+
+  .footer-inner {
+    grid-template-columns: 1fr;
+    gap: 0;
+    padding-bottom: 8px;
+  }
+
+  .footer-brand {
+    margin-bottom: 20px;
+  }
+
+  .footer-accordion {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .footer-heading {
+    margin-bottom: 0;
+  }
+
+  .footer-toggle {
+    cursor: pointer;
+    pointer-events: auto;
+    padding: 14px 0;
+    margin: 0;
+  }
+
+  .footer-chevron {
+    display: block;
+    color: var(--color-gold-light);
+  }
+
+  .footer-toggle[aria-expanded="true"] .footer-chevron {
+    transform: rotate(180deg);
+  }
+
+  .footer-col-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  .footer-col-content.is-open {
+    max-height: 240px;
+    padding-bottom: 14px;
+  }
+
+  .footer-col-content p {
+    margin: 0 0 10px;
+  }
+
+  .footer-bottom {
+    padding: 14px 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .footer-col-content {
+    transition: none;
+  }
+
+  .footer-chevron {
+    transition: none;
+  }
+}

@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /checkout
+Disallow: /payment/callback
+
+Sitemap: https://your-domain.example.com/sitemap.xml

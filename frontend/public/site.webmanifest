@@ -1,0 +1,13 @@
+{
+  "name": "Belce",
+  "short_name": "Belce",
+  "description": "Belce — watches, sneakers, bracelets, and clothes in Kumasi, Ghana, with secure Paystack checkout.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#faf7f0",
+  "theme_color": "#14110f",
+  "icons": [
+    { "src": "/favicon-192x192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/favicon-512x512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

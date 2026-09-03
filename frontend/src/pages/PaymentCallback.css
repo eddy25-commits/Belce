@@ -1,0 +1,67 @@
+.payment-callback {
+  padding: 70px 0 100px;
+  display: flex;
+  justify-content: center;
+}
+.callback-card {
+  max-width: 520px;
+  text-align: center;
+}
+.callback-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  font-size: 1.6rem;
+}
+.callback-success .callback-icon {
+  background: #e5f0e6;
+  color: var(--color-success);
+}
+.callback-failed .callback-icon {
+  background: #f5e3e1;
+  color: var(--color-error);
+}
+.callback-summary {
+  text-align: left;
+  padding: 24px 26px;
+  margin: 24px 0;
+  background: var(--color-white);
+  border: 1px solid var(--color-gold-soft);
+  border-radius: 20px;
+  box-shadow: 0 14px 34px rgba(20, 17, 15, 0.06);
+}
+.callback-summary-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.88rem;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--color-line);
+  color: var(--color-charcoal);
+}
+.callback-summary-total {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--color-gold-deep);
+  border-top: 1px solid var(--color-gold-light);
+  border-bottom: none;
+  margin-top: 4px;
+  padding-top: 12px;
+}
+.callback-note {
+  font-size: 0.85rem;
+  color: #777;
+  margin-bottom: 24px;
+}
+.callback-card .btn {
+  border-radius: 999px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.callback-card .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 26px rgba(180, 140, 40, 0.35);
+}

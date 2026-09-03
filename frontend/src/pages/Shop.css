@@ -1,0 +1,74 @@
+.shop-page {
+  padding: 56px 0 80px;
+}
+.shop-search {
+  display: flex;
+  gap: 10px;
+  max-width: 420px;
+  margin: 20px 0 24px;
+}
+.shop-search input {
+  flex: 1;
+  border: 1px solid var(--color-gold-soft);
+  border-radius: 10px;
+  padding: 12px 14px;
+  font-size: 0.95rem;
+  color: var(--color-black);
+  background: var(--color-cream);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+.shop-search input::placeholder {
+  color: #9c9285;
+}
+.shop-search input:focus {
+  outline: none;
+  border-color: var(--color-gold);
+  background: var(--color-white);
+  box-shadow: 0 0 0 3px var(--color-gold-light);
+}
+.shop-search .btn {
+  border-radius: 999px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.shop-search .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 26px rgba(180, 140, 40, 0.35);
+}
+.shop-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 36px;
+}
+.shop-category-pill {
+  padding: 8px 18px;
+  border: 1px solid var(--color-gold-soft);
+  background: var(--color-white);
+  border-radius: 100px;
+  font-size: 0.8rem;
+  letter-spacing: 0.03em;
+  color: var(--color-charcoal);
+  transition: all 0.2s ease;
+}
+.shop-category-pill:hover {
+  border-color: var(--color-gold);
+}
+.shop-category-pill.is-active {
+  background: var(--color-black);
+  border-color: var(--color-black);
+  color: var(--color-gold-light);
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.shop-empty {
+  padding: 40px 0;
+  color: #777;
+}
+@media (max-width: 900px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
